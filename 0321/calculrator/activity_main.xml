@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextNumber1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="숫자 1"
+        android:inputType="number" />
+
+    <!-- Number 2 입력란 -->
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNumber1"
+        android:hint="숫자 2"
+        android:inputType="number" />
+
+    <!-- 연산 버튼들이 배치될 GridLayout -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNumber2"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- "+" 버튼 -->
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+" />
+
+        <!-- "-" 버튼 -->
+        <Button
+            android:id="@+id/buttonSubtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
+        <!-- "×" 버튼 -->
+        <Button
+            android:id="@+id/buttonMultiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="×" />
+
+        <!-- "÷" 버튼 -->
+        <Button
+            android:id="@+id/buttonDivide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="÷" />
+
+    </GridLayout>
+
+    <!-- 계산 결과를 표시하는 텍스트뷰 -->
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="결과"
+        android:textSize="18sp"
+        android:layout_below="@id/gridLayout"
+        android:layout_alignParentLeft="true" />
+
+</RelativeLayout>
