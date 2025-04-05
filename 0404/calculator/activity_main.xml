@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tvInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:gravity="end"
+        android:padding="24dp"
+        android:background="#EEEEEE"
+        android:text=""/>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:layout_marginTop="16dp"
+        android:alignmentMode="alignMargins"
+        android:rowOrderPreserved="false">
+
+        <Button android:text="7" android:onClick="onClick" style="@style/CalcButton"/>
+        <Button android:text="8" android:onClick="onClick" style="@style/CalcButton"/>
+        <Button android:text="9" android:onClick="onClick" style="@style/CalcButton"/>
+        <Button android:text="/" android:onClick="onClick" style="@style/CalcButton"/>
+
+        <Button android:text="4" android:onClick="onClick" style="@style/CalcButton"/>
+        <Button android:text="5" android:onClick="onClick" style="@style/CalcButton"/>
+        <Button android:text="6" android:onClick="onClick" style="@style/CalcButton"/>
+        <Button android:text="*" android:onClick="onClick" style="@style/CalcButton"/>
+
+        <Button android:text="1" android:onClick="onClick" style="@style/CalcButton"/>
+        <Button android:text="2" android:onClick="onClick" style="@style/CalcButton"/>
+        <Button android:text="3" android:onClick="onClick" style="@style/CalcButton"/>
+        <Button android:text="-" android:onClick="onClick" style="@style/CalcButton"/>
+
+        <Button android:text="C" android:onClick="onClick" style="@style/CalcButton"/>
+        <Button android:text="0" android:onClick="onClick" style="@style/CalcButton"/>
+        <Button android:text="←" android:onClick="onClick" style="@style/CalcButton"/>
+        <Button android:text="+" android:onClick="onClick" style="@style/CalcButton"/>
+
+        <Button
+            android:text="="
+            android:layout_columnSpan="4"
+            android:onClick="onClick"
+            style="@style/CalcButton"/>
+    </GridLayout>
+</LinearLayout>
