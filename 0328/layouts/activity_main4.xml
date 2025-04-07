@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    android:background="#F5EDFF">
+
+    <!-- 로고 이미지 -->
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="220dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/img_dice"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/logo_description" />
+
+    <!-- 아이디 라벨 -->
+    <TextView
+        android:id="@+id/labelId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_id"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:minWidth="72dp"
+        android:layout_below="@id/imageLogo"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- 아이디 입력 -->
+    <EditText
+        android:id="@+id/editTextId"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_toEndOf="@id/labelId"
+        android:layout_alignTop="@id/labelId"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/hint_id"
+        android:inputType="textEmailAddress"
+        android:autofillHints="username"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@android:drawable/edit_text"
+        android:textSize="14sp" />
+
+    <!-- 패스워드 라벨 -->
+    <TextView
+        android:id="@+id/labelPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_password"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:minWidth="72dp"
+        android:layout_below="@id/editTextId"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- 패스워드 입력 -->
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_toEndOf="@id/labelPassword"
+        android:layout_alignTop="@id/labelPassword"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:autofillHints="password"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@android:drawable/edit_text"
+        android:textSize="14sp" />
+
+    <!-- 버튼 컨테이너 -->
+    <RelativeLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp">
+
+        <!-- 로그인 버튼 -->
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:text="@string/btn_login"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#5E3AB9"
+            android:textSize="14sp" />
+
+        <!-- 회원가입 버튼 -->
+        <Button
+            android:id="@+id/buttonJoin"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:layout_toEndOf="@id/buttonLogin"
+            android:layout_marginStart="16dp"
+            android:text="@string/btn_join"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#5E3AB9"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <!-- 결과 텍스트 -->
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonContainer"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:padding="12dp"
+        android:gravity="top"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:text="@string/result_text"
+        android:textColor="#000000"
+        android:textSize="13sp" />
+</RelativeLayout>
