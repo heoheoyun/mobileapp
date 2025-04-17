@@ -26,9 +26,8 @@
 
 ## 🛠️ 사용 기술
 
-- Android Studio (Java/Kotlin)
+- Android Studio (Java)
 - XML 기반 UI 레이아웃
 - Activity 전환 구조
-- (선택) Room, SharedPreferences 등 로컬 저장소 활용
 
 ---
