@@ -26,7 +26,7 @@ Android Studio를 활용해 만든 간단한 할 일 관리 앱입니다.
 ## 🛠️ 기술 스택
 
 - Android Studio
-- Java 또는 Kotlin
+- Java
 - XML 레이아웃
 - 기본 Activity 구조
 
