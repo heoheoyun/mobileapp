@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="housing_types">
+        <item>아파트</item>
+        <item>빌라/연립</item>
+        <item>단독주택</item>
+        <item>오피스텔</item>
+        <item>기타</item>
+    </string-array>
+</resources>

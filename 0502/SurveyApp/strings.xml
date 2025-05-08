@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SurveyApp</string>
+    <string name="start">시작하기</string>
+    <string name="next">다음</string>
+    <string name="previous">이전</string>
+    <string name="submit">제출</string>
+
+    <string name="age_question">나이는 몇 살이신가요?</string>
+    <string name="occupation_question">직업은 무엇인가요?</string>
+    <string name="gender_question">성별은 무엇인가요?</string>
+    <string name="residence_question">주 거주 지역은 어디인가요?</string>
+    <string name="housing_type_question">주거 형태는 무엇인가요?</string>
+    <string name="male">남성</string>
+    <string name="female">여성</string>
+    <string name="other">기타</string>
+
+    <string name="education_question">최종 학력은 무엇인가요?</string>
+    <string name="income_question">월 평균 소득은 어느 정도 되시나요?</string>
+    <string name="marital_status_question">결혼 여부는 어떻게 되시나요?</string>
+    <string name="single">미혼</string>
+    <string name="married">기혼</string>
+    <string name="divorced">이혼</string>
+    <string name="num_family_question">총 가족 구성원 수는 몇 명인가요?</string>
+    <string name="religion_question">종교가 있으신가요?</string>
+    <string name="yes">있음</string>
+    <string name="no">없음</string>
+
+    <string name="result">설문 결과</string>
+    <string name="age">나이: %s</string>
+    <string name="occupation">직업: %s</string>
+    <string name="gender">성별: %s</string>
+    <string name="residence">거주 지역: %s</string>
+    <string name="housing_type">주거 형태: %s</string>
+    <string name="education">최종 학력: %s</string>
+    <string name="income">월 평균 소득: %s</string>
+    <string name="marital_status">결혼 여부: %s</string>
+    <string name="num_family">총 가족 구성원 수: %s</string>
+    <string name="religion">종교: %s</string>
+
+    <string name="survey_start_title">설문조사 시작</string>
+</resources>
