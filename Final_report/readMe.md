@@ -49,42 +49,7 @@
 
 ## 📁 폴더 구조 예시
 
-LearningApp/
-├── app/
-│   ├── src/
-│   │   └── main/
-│   │       ├── java/
-│   │       │   └── com/example/learningapp/
-│   │       │       ├── MainActivity.java                 # 메인 메뉴
-│   │       │       ├── AddLearningActivity.java          # 학습 항목 추가
-│   │       │       ├── LearningListActivity.java         # 전체 학습 항목 목록
-│   │       │       ├── FavoriteActivity.java             # 즐겨찾기 목록
-│   │       │       ├── QuizActivity.java                 # 퀴즈 기능
-│   │       │       ├── StatsActivity.java                # 통계 화면
-│   │       │       ├── LearningAdapter.java              # RecyclerView 어댑터
-│   │       │       ├── DBHelper.java                     # SQLite 데이터베이스 관리
-│   │       │       └── model/
-│   │       │           └── LearningItem.java             # 데이터 모델 클래스
-│   │       ├── res/
-│   │       │   ├── layout/
-│   │       │   │   ├── activity_main.xml
-│   │       │   │   ├── activity_add_learning.xml
-│   │       │   │   ├── activity_learning_list.xml
-│   │       │   │   ├── activity_favorite.xml
-│   │       │   │   ├── activity_quiz.xml
-│   │       │   │   ├── activity_stats.xml
-│   │       │   │   └── item_learning.xml                 # RecyclerView 항목 레이아웃
-│   │       │   ├── values/
-│   │       │   │   ├── strings.xml                       # 다국어 문자열
-│   │       │   │   ├── colors.xml                        # 색상 리소스
-│   │       │   │   ├── dimens.xml                        # 크기 리소스
-│   │       │   │   └── themes.xml                        # 테마 스타일
-│   │       │   └── drawable/
-│   │       │       └── (아이콘, 버튼 이미지 등)
-│   │       └── AndroidManifest.xml
-│   └── build.gradle (모듈 단위)
-├── build.gradle (프로젝트 단위)
-└── README.md
+<pre><code>LearningApp/ ├── app/ │ └── src/ │ └── main/ │ ├── java/ │ │ └── com/example/learningapp/ │ │ ├── MainActivity.java // 메인 메뉴 │ │ ├── AddLearningActivity.java // 학습 항목 추가 │ │ ├── LearningListActivity.java // 학습 목록 보기 │ │ ├── FavoriteActivity.java // 즐겨찾기 목록 │ │ ├── QuizActivity.java // 퀴즈 기능 │ │ ├── StatsActivity.java // 통계 화면 │ │ ├── LearningAdapter.java // RecyclerView 어댑터 │ │ ├── DBHelper.java // SQLite DB 관리 │ │ └── model/ │ │ └── LearningItem.java // 학습 항목 모델 클래스 │ ├── res/ │ │ ├── layout/ │ │ │ ├── activity_main.xml │ │ │ ├── activity_add_learning.xml │ │ │ ├── activity_learning_list.xml │ │ │ ├── activity_favorite.xml │ │ │ ├── activity_quiz.xml │ │ │ ├── activity_stats.xml │ │ │ └── item_learning.xml // RecyclerView 항목 레이아웃 │ │ ├── values/ │ │ │ ├── strings.xml │ │ │ ├── colors.xml │ │ │ ├── dimens.xml │ │ │ └── themes.xml │ │ └── drawable/ // 앱 아이콘 및 그래픽 │ └── AndroidManifest.xml ├── build.gradle (Project level) └── README.md </code></pre>
 
 ---
 
