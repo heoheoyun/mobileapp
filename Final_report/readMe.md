@@ -2,7 +2,7 @@
 
 > **2025년 1학기 모바일 앱 개발 기말 프로젝트**  
 > 개발자: 허윤  
-> 개발환경: Android Studio (Java 기반, Kotlin DSL 사용)  
+> 개발환경: Android Studio (Java  사용)  
 > SDK 버전: `minSdk 30`, `targetSdk 35`  
 > 데이터 저장: SQLite 로컬 데이터베이스 사용
 
